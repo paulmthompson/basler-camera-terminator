@@ -1,0 +1,126 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 1-1634612-0:1-1634612-0 Exposure1
+U 1 1 5EE7B221
+P 5200 1750
+F 0 "Exposure1" H 5328 1972 50  0000 L CNN
+F 1 "1-1634612-0" H 5328 1881 50  0000 L CNN
+F 2 "TE_1-1634612-0" H 5200 1750 50  0001 L BNN
+F 3 "Compliant" H 5200 1750 50  0001 L BNN
+F 4 "1" H 5200 1750 50  0001 L BNN "Field4"
+F 5 "1-1634612-0" H 5200 1750 50  0001 L BNN "Field5"
+	1    5200 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1-1634612-0:1-1634612-0 Trigger1
+U 1 1 5EE7BCD7
+P 5550 1750
+F 0 "Trigger1" H 5678 1972 50  0000 L CNN
+F 1 "1-1634612-0" H 5678 1881 50  0000 L CNN
+F 2 "TE_1-1634612-0" H 5550 1750 50  0001 L BNN
+F 3 "Compliant" H 5550 1750 50  0001 L BNN
+F 4 "1" H 5550 1750 50  0001 L BNN "Field4"
+F 5 "1-1634612-0" H 5550 1750 50  0001 L BNN "Field5"
+	1    5550 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1-1634612-0:1-1634612-0 Power1
+U 1 1 5EE7C352
+P 3950 1900
+F 0 "Power1" H 4078 2122 50  0000 L CNN
+F 1 "1-1634612-0" H 4078 2031 50  0000 L CNN
+F 2 "TE_1-1634612-0" H 3950 1900 50  0001 L BNN
+F 3 "Compliant" H 3950 1900 50  0001 L BNN
+F 4 "1" H 3950 1900 50  0001 L BNN "Field4"
+F 5 "1-1634612-0" H 3950 1900 50  0001 L BNN "Field5"
+	1    3950 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 1950 5100 2000
+Wire Wire Line
+	5100 2000 4350 2000
+Wire Wire Line
+	5450 1950 5450 2000
+Wire Wire Line
+	5450 2000 5100 2000
+Connection ~ 5100 2000
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 5EE80E29
+P 4350 2500
+F 0 "#PWR0101" H 4350 2250 50  0001 C CNN
+F 1 "GNDREF" H 4355 2327 50  0000 C CNN
+F 2 "" H 4350 2500 50  0001 C CNN
+F 3 "" H 4350 2500 50  0001 C CNN
+	1    4350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2500 4350 2450
+Connection ~ 4350 2000
+Wire Wire Line
+	4350 2000 4150 2000
+$Comp
+L Device:R 10K_Resistor1
+U 1 1 5EE820A6
+P 4600 2100
+F 0 "10K_Resistor1" V 4393 2100 50  0000 C CNN
+F 1 "10k" V 4484 2100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4530 2100 50  0001 C CNN
+F 3 "~" H 4600 2100 50  0001 C CNN
+	1    4600 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 2100 4150 2100
+Wire Wire Line
+	4750 2100 5000 2100
+Wire Wire Line
+	5000 2100 5000 1950
+$Comp
+L Connector:Conn_01x06_Male Camera_input1
+U 1 1 5EE8334A
+P 5050 3000
+F 0 "Camera_input1" V 5204 2612 50  0000 R CNN
+F 1 "Conn_01x06_Male" V 5113 2612 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5050 3000 50  0001 C CNN
+F 3 "~" H 5050 3000 50  0001 C CNN
+	1    5050 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 2800 5250 2450
+Wire Wire Line
+	5250 2450 4350 2450
+Connection ~ 4350 2450
+Wire Wire Line
+	4350 2450 4350 2000
+Wire Wire Line
+	5150 2800 5150 2100
+Wire Wire Line
+	5150 2100 5000 2100
+Connection ~ 5000 2100
+Wire Wire Line
+	5350 1950 5350 2650
+Wire Wire Line
+	5350 2650 4950 2650
+Wire Wire Line
+	4950 2650 4950 2800
+$EndSCHEMATC
